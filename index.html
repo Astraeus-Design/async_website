@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- main header -->
+    <div id="mainhdr">
+        <h1>UK Astronomy Weather Forecast</h1>
+    </div>
+    
+    <div id="main_container">
+
+      <!-- section for post code search and address display -->
+      <div id="searchDiv">
+         <div id="search_container">
+            <textarea name="textBox1" id="inputText" cols="8" rows="1" placeholder="Postcode" maxlength="8"></textarea>
+            <button id="searchButton">Search</button>
+ 
+         </div>
+         <div id="addressBox">
+           <p id="addressText"></p>
+         </div>
+
+
+
+      </div>
+
+      <!-- section for displayed sunrise,set and weather data in grid form -->
+      <div id="dataDiv">
+         <div class="opDivs" id="output1">
+          <div id="l1a">
+            <h3>Sunrise Time</h3>
+          </div>
+          <div id="l1b">
+            <textarea name="t1" id="sunrise" cols="15" rows="1"></textarea>
+          </div>
+        </div>
+        <div class="opDivs" id="output2">
+            <div id="l2a">
+              <h3>Sunset Time</h3>
+            </div>
+            <div id="l2b">
+              <textarea name="t1" id="sunset" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+          <div class="opDivs" id="output3">
+            <div id="l3a">
+              <h3>First Light</h3>
+            </div>
+            <div id="l3b">
+              <textarea name="t1" id="firstLight" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+          <div class="opDivs" id="output4">
+            <div id="l4a">
+              <h3>Last Light</h3>
+            </div>
+            <div id="l4b">
+              <textarea name="t1" id="lastLight" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+          <div class="opDivs" id="output5">
+            <div id="l5a">
+              <h3>Dawn</h3>
+            </div>
+            <div id="l5b">
+              <textarea name="t1" id="dawn" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+          <div class="opDivs" id="output6">
+            <div id="l6a">
+              <h3>Dusk</h3>
+            </div>
+            <div id="l6b">
+              <textarea name="t1" id="dusk" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+          <div class="opDivs" id="output7">
+            <div id="l7a">
+              <h3>Day Length</h3>
+            </div>
+            <div id="l7b">
+              <textarea name="t1" id="dayLength" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+          <div class="opDivs" id="output8">
+            <div id="l8a">
+              <h3>Time Zone</h3>
+            </div>
+            <div id="l8b">
+              <textarea name="t1" id="timezone" cols="15" rows="1"></textarea>
+            </div>
+          </div>
+
+          <div id="output_forecast">
+            <div id="imageDiv">
+             <!--  <img src="" alt="no weather data"> -->
+            </div>
+
+          </div>
+                
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

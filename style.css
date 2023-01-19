@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    background-image: url(./images/pexels-sindre-strøm-958363.jpg);
+    background-size: 100%;
+}
+
+#mainhdr{
+    width:75%;
+    margin:20px auto 0 auto;
+    padding: 15px 30px 15px 30px;
+    background-color: plum;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset 0px -1px 16px 7px rgba(0,0,0,0.75);
+}
+
+textarea{
+    font-size: 1.25rem;
+    resize: none; 
+}
+
+.opDivs{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    background-color: rgb(182, 181, 181);
+    border-radius: 10px;
+    padding:10px;
+    margin: 10px auto 0 auto;
+    box-shadow: inset 0px -1px 16px 7px rgba(0,0,0,0.75);
+
+}
+
+#searchDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:35%;
+    margin: 25px auto 15px auto;
+    padding:10px;
+    background-color: rgb(182, 181, 181);
+    border-radius: 10px;
+    box-shadow: inset 0px -1px 16px 7px rgba(0,0,0,0.75);
+
+}
+
+#search_container{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        background-color: plum;
+        margin: 10px auto 10px auto;
+        box-shadow: inset 0px -1px 16px 7px rgba(0,0,0,0.75);
+        border-radius: 5px;
+    
+}
+
+#inputText{
+    font-size: 1.5rem;
+    margin:10px;
+    padding:5px;
+    border-radius: 5px;
+    
+
+}
+
+#searchButton{
+    font-size: 1.5rem;
+    margin:10px;
+    padding:5px;
+    border-radius: 5px;
+
+}
+
+#addressBox{
+    font-size: 1.25rem;
+    margin:10px;
+    padding:5px;
+    border-radius: 5px; 
+    text-align: center;   
+}
+
+
+
+#l1a,#l2a,#l3a,#l4a,#l5a,#l6a,#l7a,#l8a{
+    text-align: center;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+
+/* grid set up for weather data display */
+
+#dataDiv{
+    display:grid;
+    grid-template-columns: auto;
+    gap:10px;
+    width:80%;
+    margin:0 auto;
+    /*max-width:900px;*/
+    grid-template-areas: "a b c d"
+                        "e f g h"
+                        "i i i i"
+                        "i i i i"
+                        "i i i i";
+
+}
+
+#output1{
+    grid-area: a;
+}
+
+#output2{
+    grid-area: e;
+}
+
+#output3{
+    grid-area: b;
+}
+
+#output4{
+    grid-area: f;
+}
+
+#output5{
+    grid-area: c;
+}
+
+#output6{
+    grid-area: g;
+}
+
+#output7{
+    grid-area: d;
+}
+
+#output8{
+    grid-area: h;
+}
+
+#output_forecast{
+    grid-area: i;
+}
+
+#imageDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:250px;
+    margin:10px auto 10px auto;
+    background-color:rgb(16, 11, 29);
+    border-radius: 10px;
+}
+
+#astroimage{
+    display:block;
+    margin:10px auto 10px auto;
+    padding:10px;
+}
+
